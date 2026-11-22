@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecondSpark - E-Waste Recycling</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f4f5e9;
+            font-family: Arial;
+            margin: 0;
+            color: #234536;
+        }
+
+        #header {
+            background-color: #e5eddf;
+            padding: 25px;
+            text-align: center;
+        }
+
+        #header h1 {
+            font-size: 38px;
+            color: #28583f;
+        }
+
+        #header p {
+            font-size: 16px;
+        }
+
+        .menu {
+            background-color: #28583f;
+            padding: 16px;
+            text-align: center;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+        }
+
+        .hero {
+            background-color: #dce9d7;
+            margin: 25px;
+            padding: 35px;
+            border-radius: 25px;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 35px;
+        }
+
+        .hero img {
+            width: 280px;
+            height: 190px;
+            border-radius: 20px;
+            margin: 15px;
+        }
+
+        .button {
+            background-color: #28583f;
+            color: white;
+            border: none;
+            padding: 13px 25px;
+            border-radius: 25px;
+        }
+
+        .box {
+            background-color: #ffffff;
+            border: 1px solid #d5e1d1;
+            padding: 25px;
+            margin: 25px;
+            border-radius: 20px;
+        }
+
+        .category {
+            background-color: #edf3e9;
+            border: 1px solid #d4e2d0;
+            padding: 18px;
+            margin: 10px;
+            width: 200px;
+            display: inline-block;
+            text-align: center;
+            border-radius: 18px;
+        }
+
+        .category img {
+            width: 130px;
+            height: 100px;
+            border-radius: 15px;
+        }
+
+        
+        input, select, textarea {
+            width: 90%;
+            padding: 12px;
+            margin: 8px;
+            border: 1px solid #b8cdb7;
+            border-radius: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #c4d7c2;
+            padding: 13px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #dce9d7;
+        }
+
+        #footer {
+            background-color: #28583f;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="header">
+        <h1>SecondSpark </h1>
+        <p>A Better Way to Recycle Electronics</p>
+    </div>
+
+    <div class="menu">
+        <a href="#home">Home</a>
+        <a href="#categories">Categories</a>
+        <a href="#pickup">Pickup</a>
+        <a href="#centres">Centres</a>
+        <a href="#awareness">About</a>
+    </div>
+
+    <div class="hero" id="home">
+        <h2 class="text-success">Give Your E-Waste a Second Life</h2>
+        <p>Old electronics can create a new beginning. Recycle your unused devices and help keep our planet clean.</p>
+
+        <img src="image.jpeg" alt="image">
+
+        <br>
+        <a href="#pickup">
+            <button class="button">Recycle Now →</button>
+        </a>
+    </div>
+
+    <div class="box">
+        <h2 class="text-success">A Small Step, A Big Change</h2>
+        <p>Electronic waste contains materials that can harm our environment. Responsible recycling helps recover useful materials and reduces pollution.</p>
+
+        <h3>Why Recycle?</h3>
+        <p>Protect nature, save resources and reduce the amount of electronic waste sent to landfills.</p>
+    </div>
+
+    <div class="box" id="categories">
+        <h2 class="text-success">What Can You Recycle?</h2>
+        <p>Choose from different types of electronic waste.</p>
+
+        <div class="category">
+            <img src="phone.jpeg" alt="Mobile Phone">
+            <h3>Mobiles</h3>
+            <p>Old mobile phones</p>
+        </div>
+
+        <div class="category">
+            <img src="laptop.jpeg" alt="Laptop">
+            <h3>Laptops</h3>
+            <p>Unused computers</p>
+        </div>
+
+        <div class="category">
+            <img src="battery.jpeg" alt="Battery">
+            <h3>Batteries</h3>
+            <p>Used batteries</p>
+        </div>
+
+        <div class="category">
+            <img src="tv.jpeg" alt="Television">
+            <h3>Televisions</h3>
+            <p>Old television sets</p>
+        </div>
+
+        <div class="category">
+            <img src="accesories.jpeg" alt="Accessories">
+            <h3>Accessories</h3>
+            <p>Chargers and cables</p>
+        </div>
+    </div>
+
+    <div class="box" id="pickup">
+        <h2 class="text-success">Schedule Your Pickup</h2>
+        <p>Let us help you recycle your old electronics.</p>
+
+        <form>
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter your name"><br><br>
+
+            <label>Contact Number</label>
+            <input type="number" placeholder="Enter your contact number"><br><br>
+
+            <label>Product Category</label>
+            <select>
+                <option>Mobile Phone</option>
+                <option>Laptop</option>
+                <option>Battery</option>
+                <option>Television</option>
+                <option>Other Electronics</option>
+            </select>
+<br><br>
+
+            <label>Product Details</label>
+            <textarea placeholder="Enter product details"></textarea>
+<br><br>
+
+            <label>Pickup Address</label>
+            <textarea placeholder="Enter your address"></textarea>
+<br><br>
+
+            <label>Preferred Date</label>
+            <input type="date"><br>
+
+            <input type="submit" value="Submit Request" class="button"><br>
+        </form>
+    </div>
+
+    <div class="box" id="centres">
+        <h2 class="text-success">Recycling Centres</h2>
+        <p>Find a recycling centre to dispose of your electronic waste responsibly.</p>
+
+        <table>
+            <tr>
+                <th>Centre</th>
+                <th>Location</th>
+                <th>Contact</th>
+            </tr>
+            <tr>
+                <td>Green Earth Recycling</td>
+                <td>Nagpur</td>
+                <td>9876543210</td>
+            </tr>
+            <tr>
+                <td>Eco Waste Centre</td>
+                <td>Pune</td>
+                <td>9876543211</td>
+            </tr>
+            <tr>
+                <td>Recycle India</td>
+                <td>Mumbai</td>
+                <td>9876543212</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="box">
+        <h2 class="text-success">Track Your Request</h2>
+
+        <table>
+            <tr>
+                <th>Request ID</th>
+                <th>Product</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td>EW101</td>
+                <td>Mobile</td>
+                <td>Request Received</td>
+            </tr>
+            <tr>
+                <td>EW102</td>
+                <td>Laptop</td>
+                <td>Pickup Scheduled</td>
+            </tr>
+            <tr>
+                <td>EW103</td>
+                <td>Battery</td>
+                <td>Recycled</td>
+            </tr>
+        </table>
+    </div>
+ <h3>Location Map</h3>
+
+        <iframe
+            src="https://www.google.com/maps?q=Nagpur&output=embed"
+            width="100%"
+            height="300"
+            title="Collection Center Location">
+        </iframe>
+    <div class="box" id="awareness">
+        <h2 class="text-success">Make Every Device Count</h2>
+
+        <img src="image1.jpeg" alt="image" width="280" height="180">
+
+        <h3>What Happens to E-Waste?</h3>
+        <p>Collected electronic waste is sorted and sent to recycling centres. Useful materials are recovered and harmful materials are handled safely.</p>
+
+        <h3>How Can You Help?</h3>
+        <p>Recycle old devices, donate working electronics and choose authorised recycling centres.</p>
+
+        <h3>Our Goal</h3>
+        <p>A cleaner environment starts with responsible choices. Together, we can make a difference.</p>
+    </div>
+
+    <div id="footer">
+        <h2>SecondSpark ♻️</h2>
+        <p>Reuse • Recycle • Restore</p>
+        <p>Give Electronics a Second Life!</p>
+    </div>
+
+</body>
+</html>
